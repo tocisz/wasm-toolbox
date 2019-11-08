@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install -y python2.7 cmake g++ unzip &&  update-alternatives --install /usr/bin/python python /usr/bin/python2.7 10
+RUN apt-get update && apt-get install -y python2.7 cmake git g++ unzip &&  update-alternatives --install /usr/bin/python python /usr/bin/python2.7 10
 
 ADD https://github.com/emscripten-core/emsdk/archive/master.zip /opt/emsdk.zip
 ADD https://github.com/WebAssembly/wabt/archive/master.zip /opt/wabt.zip
